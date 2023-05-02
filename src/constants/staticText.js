@@ -36,13 +36,13 @@ const Conatants = {
   ADD_PAYMENT: "Add Payment Details",
 
   // ERROR SHIPPING/BILLING ADDRESS
-  FIRST_NAME_REQUIRE: "First Name is Required!",
-  LAST_NAME_REQUIRE: "Last Name is Required!",
-  ADDRESS_REQUIRE: "Address is Required!",
-  CITY_REQUIRE: "City is Required!",
-  STATE_REQUIRE: "State is Required!",
-  ZIP_CODE_REQUIRE: "Correct Zip Code is Required!",
-  COUNTRY_REQUIRE: "Country is Required!",
+  FIRST_NAME_REQUIRE: "First name must be 2 to 15 letters!",
+  LAST_NAME_REQUIRE: "Last name  must be 2 to 15 letters!",
+  ADDRESS_REQUIRE: "Address is required",
+  CITY_REQUIRE: "City  must be minimum 2 to 15 letters!",
+  STATE_REQUIRE: "State must be 2 to 15 letters!",
+  ZIP_CODE_REQUIRE: "Zip code must be 6 numbers!",
+  COUNTRY_REQUIRE: "Country must be 2-15 letters!",
 
   ORDER_SUMMARY: "Order Summary",
 
@@ -59,11 +59,11 @@ const Conatants = {
   ENTER_CVV: "Enter CVV",
 
   // ERROR PAYMENT
-  CARD_NAME_REQUIRE: "Card Name is Required!",
-  CARD_NUMBER_REQUIRE: "Card Number Must be 16 to 19 Numbers",
-  EXPIRY_MONTH_REQUIRE: "Please Enter Correct Month",
-  EXPIRY_YEAR_REQUIRE: "Please Enter Correct Expiry Year",
-  CVV_REQUIRE: "CVV Must be 3 Number",
+  CARD_NAME_REQUIRE: "Card name is required!",
+  CARD_NUMBER_REQUIRE: "Card number must be 16 to 19 numbers!",
+  EXPIRY_MONTH_REQUIRE: "Please enter valid month!",
+  EXPIRY_YEAR_REQUIRE: "Please enter valid expiry year <= 2022!",
+  CVV_REQUIRE: "CVV must be 3 numbers!",
 
 
   ORDER_COMPLETED_SUCCESSFULLY: 'Order Completed Successfully!',

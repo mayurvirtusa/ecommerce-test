@@ -5,19 +5,11 @@ import rootSagas from './sagas/rootSaga';
 
 // Create sagas middleware
 const sagaMiddleware = createSagaMiddleware();
-// const composeEnhancers =
-//   (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ &&
-//     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-//       trace: true,
-//       traceLimit: 100,
-//     })) ||
-//   compose;
 
 export default function configureStore() {
   const store = createStore(
     rootReducer,
     applyMiddleware(sagaMiddleware)
-    // composeEnhancers(applyMiddleware(sagaMiddleware), persistState('auth'))
   );
   // Running sagas
   sagaMiddleware.run(rootSagas);

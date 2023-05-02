@@ -1,5 +1,5 @@
 import { all, call, put, takeLatest } from "redux-saga/effects";
-import { GET_LIST, GET_PRODUCT_LIST } from "../actions/Auth/actionTypes";
+import { GET_PRODUCT_LIST } from "../actions/Auth/actionTypes";
 import {
   getProductListSucess,
   getProductListFaliur,

@@ -114,8 +114,8 @@ const AddPayment = () => {
                 placeholder={ENTER_EXP_MONTH}
                 value={formData.expiryMonth}
                 onChange={handleAddressChange}
-                pattern="^[0-9]{2}$"
-              />
+                pattern="^([1-9]|0[1-9]|1[0-2])$"
+                />
               <Form.Control.Feedback type="invalid">
                 {EXPIRY_MONTH_REQUIRE}
               </Form.Control.Feedback>
@@ -131,8 +131,8 @@ const AddPayment = () => {
                 placeholder={ENTER_EXP_YEAR}
                 value={formData.expiryYear}
                 onChange={handleAddressChange}
-                pattern="^[0-9]{4}$"
-              />
+                pattern="^20[2-9][3-9]$"
+                />
               <Form.Control.Feedback type="invalid">
                 {EXPIRY_YEAR_REQUIRE}
               </Form.Control.Feedback>

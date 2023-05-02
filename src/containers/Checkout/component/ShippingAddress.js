@@ -116,6 +116,7 @@ const navigate = useNavigate();
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleAddressChange}
+                pattern="^[A-Za-z]{2,15}$"
               />
               <Form.Control.Feedback type="invalid">
                 {FIRST_NAME_REQUIRE}
@@ -131,6 +132,7 @@ const navigate = useNavigate();
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleAddressChange}
+                pattern="^[A-Za-z]{2,15}$"
               />
               <Form.Control.Feedback type="invalid">
                 {LAST_NAME_REQUIRE}
@@ -162,6 +164,7 @@ const navigate = useNavigate();
                 placeholder={ENTER_CITY}
                 value={formData.city}
                 onChange={handleAddressChange}
+                pattern="[a-zA-Z]{2,15}"
               />
               <Form.Control.Feedback type="invalid">
                 {CITY_REQUIRE}
@@ -178,6 +181,7 @@ const navigate = useNavigate();
                 placeholder={ENTER_STATE}
                 value={formData.state}
                 onChange={handleAddressChange}
+                pattern="[a-zA-Z]{2,15}"
               />
               <Form.Control.Feedback type="invalid">
                 {STATE_REQUIRE}
@@ -209,6 +213,7 @@ const navigate = useNavigate();
                 placeholder={ENTER_COUNTRY}
                 value={formData.country}
                 onChange={handleAddressChange}
+                pattern="[a-zA-Z]{2,15}"
               />
               <Form.Control.Feedback type="invalid">
                 {COUNTRY_REQUIRE}
@@ -247,6 +252,7 @@ const navigate = useNavigate();
                 name="firstName1"
                 value={formData.firstName1}
                 onChange={handleAddressChange}
+                pattern="^[A-Za-z]{2,15}$"
               />
               <Form.Control.Feedback type="invalid">
                 {FIRST_NAME_REQUIRE}
@@ -262,6 +268,7 @@ const navigate = useNavigate();
                 name="lastName1"
                 value={formData.lastName1}
                 onChange={handleAddressChange}
+                pattern="^[A-Za-z]{2,15}$"
               />
               <Form.Control.Feedback type="invalid">
                 {LAST_NAME_REQUIRE}
@@ -293,6 +300,8 @@ const navigate = useNavigate();
                 placeholder={ENTER_CITY}
                 value={formData.city1}
                 onChange={handleAddressChange}
+                pattern="[a-zA-Z]{2,15}"
+
               />
               <Form.Control.Feedback type="invalid">
                 {CITY_REQUIRE}
@@ -309,6 +318,7 @@ const navigate = useNavigate();
                 placeholder={ENTER_STATE}
                 value={formData.state1}
                 onChange={handleAddressChange}
+                pattern="[a-zA-Z]{2,15}"
               />
               <Form.Control.Feedback type="invalid">
                 {STATE_REQUIRE}
@@ -340,6 +350,7 @@ const navigate = useNavigate();
                 placeholder={ENTER_COUNTRY}
                 value={formData.country1}
                 onChange={handleAddressChange}
+                pattern="[a-zA-Z]{2,15}"
               />
               <Form.Control.Feedback type="invalid">
                 {COUNTRY_REQUIRE}
