@@ -181,7 +181,7 @@ const navigate = useNavigate();
                 placeholder={ENTER_STATE}
                 value={formData.state}
                 onChange={handleAddressChange}
-                pattern="[a-zA-Z]{2,15}"
+                pattern="[a-zA-Z\s]{2,20}"
               />
               <Form.Control.Feedback type="invalid">
                 {STATE_REQUIRE}
@@ -301,7 +301,6 @@ const navigate = useNavigate();
                 value={formData.city1}
                 onChange={handleAddressChange}
                 pattern="[a-zA-Z]{2,15}"
-
               />
               <Form.Control.Feedback type="invalid">
                 {CITY_REQUIRE}
@@ -318,7 +317,7 @@ const navigate = useNavigate();
                 placeholder={ENTER_STATE}
                 value={formData.state1}
                 onChange={handleAddressChange}
-                pattern="[a-zA-Z]{2,15}"
+                pattern="[a-zA-Z\s]{2,20}"
               />
               <Form.Control.Feedback type="invalid">
                 {STATE_REQUIRE}
