@@ -42,7 +42,7 @@ const Conatants = {
   CITY_REQUIRE: "City  must be minimum 2 to 15 letters!",
   STATE_REQUIRE: "State must be 2 to 20 letters!",
   ZIP_CODE_REQUIRE: "Zip code must be 6 numbers!",
-  COUNTRY_REQUIRE: "Country must be 2-15 letters!",
+  COUNTRY_REQUIRE: "Country must be 2 to 15 letters!",
 
   ORDER_SUMMARY: "Order Summary",
 
